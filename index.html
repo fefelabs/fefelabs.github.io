@@ -9,46 +9,10 @@
 
 <body>
 
-  <!-- Banner -->
-  <!-- <div class="bg-indigo-600">
-    <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between flex-wrap">
-        <div class="w-0 flex-1 flex items-center">
-          <span class="flex p-2 rounded-lg bg-indigo-800">
-            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-            </svg>
-          </span>
-          <p class="ml-3 font-medium text-white truncate">
-            <span class="md:hidden"> We announced a new product! </span>
-            <span class="hidden md:inline"> Big news! We're excited to announce a brand new product. </span>
-          </p>
-        </div>
-        <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-          <a href="#"
-            class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50">
-            Learn more </a>
-        </div>
-        <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
-          <button type="button"
-            class="-mr-1 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2">
-            <span class="sr-only">Dismiss</span>
-            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Hero -->
+  <!-- Header -->
   <div class="relative bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto">
-      <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <div class="relative z-10 bg-white pb-16 lg:max-w-2xl lg:w-full">
         <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
           fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <polygon points="50,0 100,0 50,100 0,100" />
@@ -71,15 +35,16 @@
     </div>
   </div>
 
-  <!-- This example requires Tailwind CSS v2.0+ -->
+  <!-- Magic Shades -->
   <div class="relative bg-white overflow-hidden">
-    <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
-        <div class="sm:max-w-lg">
-          <h1 class="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">Magic Shades</h1>
+    <div class="pt-8 pb-80 md:pb-40 lg:pb-48">
+      <div
+        class="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 md:static grid gap-y-10 gap-x-6 lg:grid-cols-2 md:grid-cols-1">
+        <div class="md:max-w-lg">
+          <h1 class="text-4xl font font-extrabold tracking-tight text-gray-900 md:text-6xl">Magic Shades</h1>
           <p class="mt-4 text-2xl text-gray-500">A relaxing puzzle game</p>
           <p class="mt-4 text-l text-gray-500">
-            The simple and relaxing game, but whose difficulty increases as you go.
+            The simple and relaxing game... that becomes increasingly difficult
           </p>
           <p class="mt-4 text-l text-gray-500">
             How to play :
@@ -94,55 +59,40 @@
           <p class="mt-4 text-l text-gray-500">
             Resist the longest and reach the top of the leaderboard!
           </p>
+          <div class="mt-10 -ml-3 flex items-center">
+            <a href="https://play.google.com/store/apps/details?id=com.keke.shades_game&gl=FR&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+              class="inline-block mr-3">
+              <img alt="Get it on Google Play"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                class="h-16" />
+            </a>
+            <div>
+              <a href="https://tferrand.github.io/shades_game/"
+                class="text-center bg-green-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-green-700">Play
+                online</a>
+            </div>
+          </div>
         </div>
         <div>
-          <div class="mt-10">
-            <!-- Decorative image grid -->
-            <div aria-hidden="true"
-              class="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full">
-              <div
-                class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                <div class="flex items-center space-x-6 lg:space-x-8">
-                  <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                    <div class="w-44 aspect-auto rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
-                      <img src="./assets/magic_shades/Frame 810.png" alt=""
-                        class="w-full h-full object-center object-cover">
-                    </div>
-                    <div class="w-44 aspect-auto rounded-lg overflow-hidden">
-                      <img src="./assets/magic_shades/Frame 809.png" alt=""
-                        class="w-full h-full object-center object-cover">
-                    </div>
-                  </div>
-                  <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                    <div class="w-44 aspect-auto rounded-lg overflow-hidden">
-                      <img src="./assets/magic_shades/Frame 803.png" alt=""
-                        class="w-full h-full object-center object-cover">
-                    </div>
-                    <div class="w-44 aspect-auto rounded-lg overflow-hidden">
-                      <img src="./assets/magic_shades/Frame 811.png" alt=""
-                        class="w-full h-full object-center object-cover">
-                    </div>
-                  </div>
-                  <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                    <div class="w-44 aspect-auto rounded-lg overflow-hidden">
-                      <img src="./assets/magic_shades/Frame 804.png" alt=""
-                        class="w-full h-full object-center object-cover">
-                    </div>
-                  </div>
-                </div>
+          <!-- Screnshots -->
+          <div class="pointer-events-none lg:inset-y-0 lg:mx-auto lg:w-full">
+            <div class="flex items-center flex-wrap gap-6">
+              <div class="w-44 aspect-auto rounded-lg overflow-hidden">
+                <img src="./assets/magic_shades/Frame 810.png" alt="" class="w-full h-full object-center object-cover">
+              </div>
+              <div class="w-44 aspect-auto rounded-lg overflow-hidden">
+                <img src="./assets/magic_shades/Frame 809.png" alt="" class="w-full h-full object-center object-cover">
+              </div>
+              <div class="w-44 aspect-auto rounded-lg overflow-hidden">
+                <img src="./assets/magic_shades/Frame 803.png" alt="" class="w-full h-full object-center object-cover">
+              </div>
+              <div class="w-44 aspect-auto rounded-lg overflow-hidden">
+                <img src="./assets/magic_shades/Frame 811.png" alt="" class="w-full h-full object-center object-cover">
+              </div>
+              <div class="w-44 aspect-auto rounded-lg overflow-hidden">
+                <img src="./assets/magic_shades/Frame 804.png" alt="" class="w-full h-full object-center object-cover">
               </div>
             </div>
-
-            <!-- <a
-              href="https://play.google.com/store/apps/details?id=com.keke.shades_game&gl=FR&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class="inline-block mr-3">
-              <img alt="Get it on Google Play"
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" class="h-16"/>
-            </a> -->
-            <a href="https://play.google.com/store/apps/details?id=com.keke.shades_game"
-              class="inline-block text-center bg-blue-600 border border-transparent rounded-md py-3 px-8 mr-3 font-medium text-white hover:bg-blue-700">Download</a>
-            <a href="https://fefelabs.github.io/magic-shades/"
-              class="inline-block text-center bg-green-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-green-700">Play
-              online</a>
           </div>
         </div>
       </div>
@@ -152,8 +102,8 @@
 </body>
 
 <footer class="mt-10 pb-4">
-  <div class="max-w-6xl xl:max-w-6xl mx-auto divide-y divide-gray-200 px-4 sm:px-6 md:px-8">
-    <div class="flex flex-col-reverse justify-between pt-5 pb-4 border-t lg:flex-row bg-top">
+  <div class="max-w-7xl mx-auto divide-y divide-gray-200 px-4 sm:px-6 md:px-8">
+    <div class="flex flex-row justify-between pt-5 pb-4 border-t bg-top">
       <ul class="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
         <li>
           <a href="https://fefelabs.github.io/privacy-notice/"
