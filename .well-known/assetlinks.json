@@ -11,5 +11,15 @@
         "B7:EA:DD:C6:F3:C4:61:E1:C8:85:06:14:B7:79:4D:B7:A1:2B:7B:EA:D4:80:D4:FF:3E:37:12:5E:B7:C8:76:D6"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fefelabs.wordspuzzle",
+      "sha256_cert_fingerprints": [
+        "A6:8C:15:FB:CF:E0:EA:5C:65:32:AE:83:34:97:CB:E6:AD:F4:94:AE:C5:B4:5A:AE:AA:02:19:82:95:33:B9:13"
+      ]
+    }
   }
 ]
