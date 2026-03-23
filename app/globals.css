@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-display: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body: "Instrument Sans", "SF Pro Text", "Segoe UI", sans-serif;
+  --surface: #fffdf8;
+  --ink: #111827;
+  --muted: #46515f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(251, 146, 60, 0.2), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(16, 185, 129, 0.18), transparent 35%),
+    radial-gradient(circle at 80% 80%, rgba(14, 165, 233, 0.18), transparent 45%),
+    var(--surface);
+}
+
+.display-font {
+  font-family: var(--font-display);
+}
+
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.2;
+  background-image: linear-gradient(135deg, rgba(17, 24, 39, 0.04) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(17, 24, 39, 0.04) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(17, 24, 39, 0.04) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(17, 24, 39, 0.04) 25%, var(--surface) 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.7));
+  backdrop-filter: blur(14px);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease, color 150ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  color: #f8fafc;
+  background: linear-gradient(95deg, #0f766e, #0ea5e9);
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.25);
+}
+
+.btn-secondary {
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.btn-ghost {
+  color: #0f172a;
+  background: rgba(248, 250, 252, 0.62);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -8px, 0) scale(1.01);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.float {
+  animation: drift 6s ease-in-out infinite;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  animation: rise 700ms ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 120ms;
+}
+
+.delay-2 {
+  animation-delay: 220ms;
+}
+
+.delay-3 {
+  animation-delay: 320ms;
+}
+
+.delay-4 {
+  animation-delay: 420ms;
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.masonry-grid {
+  display: grid;
+  column-gap: 1.5rem;
+  row-gap: 0.75rem;
+  grid-auto-rows: 8px;
+  grid-template-columns: 1fr;
+}
+
+.masonry-card {
+  height: max-content;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .masonry-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .masonry-card-featured {
+    grid-column: span 2;
+  }
+}
