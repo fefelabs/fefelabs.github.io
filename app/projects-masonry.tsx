@@ -17,10 +17,20 @@ export type Project = {
   featured?: boolean;
 };
 
+function ExternalArrowIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
+      <path d="M7 13 13 7" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8 7h5v5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 function ExternalLink({ href, label }: { href: string; label: string }) {
   return (
     <a className="btn btn-ghost" href={href} target="_blank" rel="noreferrer">
       {label}
+      <ExternalArrowIcon />
     </a>
   );
 }
@@ -50,11 +60,6 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       }`}
     >
       <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${project.accent}`} />
-      {project.featured ? (
-        <div className="pointer-events-none absolute right-4 top-4 rounded-full border border-emerald-300/80 bg-white/85 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-700">
-          Most Important
-        </div>
-      ) : null}
 
       <div className="relative space-y-4" style={{ transitionDelay: `${index * 90}ms` }}>
         <div className="overflow-hidden rounded-2xl border border-white/65 bg-white/70">
@@ -136,6 +141,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 rel={project.landing.startsWith("http") ? "noreferrer" : undefined}
               >
                 Visite website
+                <ExternalArrowIcon />
               </a>
             </div>
           ) : null}
