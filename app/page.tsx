@@ -18,7 +18,7 @@ const liveProjects: Project[] = [
     ],
     playStore: "https://play.google.com/store/apps/details?id=com.keke.baby_match&hl=fr",
     appStore: "https://apps.apple.com/us/app/baby-match-baby-names-2023/id6449146401",
-    landing: "/baby_match/",
+    landing: "https://fefelabs.github.io/baby_match/",
     accent: "from-cyan-300/30 via-emerald-200/20 to-lime-200/20",
     featured: true,
   },
@@ -35,8 +35,7 @@ const liveProjects: Project[] = [
       "/portfolio/wordspuzzle/PlayStore_06.png",
     ],
     playStore: "https://play.google.com/store/apps/details?id=com.fefelabs.wordspuzzle&hl=fr",
-    landing: "/wordspuzzle/",
-    webVersion: "https://tferrand.github.io/wordspuzzle/",
+    landing: "https://fefelabs.github.io/wordspuzzle/",
     accent: "from-amber-300/30 via-orange-200/20 to-rose-300/20",
   },
   {
@@ -143,19 +142,9 @@ export default function HomePage() {
       <footer className="mx-auto mt-12 max-w-6xl px-4 pb-6 pt-2 sm:px-6 lg:px-8">
         <div className="glass-panel reveal delay-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl px-4 py-3 text-sm text-slate-600 sm:px-6">
           <p>© {year} fefe LABS</p>
-          <div className="flex items-center gap-3">
-            <a className="hover:text-slate-900" href="/privacy-notice/">
-              Privacy Policy
-            </a>
-            <a
-              className="hover:text-slate-900"
-              href="https://github.com/tferrand/tferrand.github.io"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Web versions repo
-            </a>
-          </div>
+          <a className="hover:text-slate-900" href="https://fefelabs.github.io/privacy-notice/">
+            Privacy Policy
+          </a>
         </div>
       </footer>
     </main>

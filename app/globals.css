@@ -63,6 +63,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   border-radius: 9999px;
   padding: 0.65rem 1rem;
   font-size: 0.9rem;

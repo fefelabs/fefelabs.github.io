@@ -135,7 +135,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 target={project.landing.startsWith("http") ? "_blank" : undefined}
                 rel={project.landing.startsWith("http") ? "noreferrer" : undefined}
               >
-                {project.landing.startsWith("http") ? "Open Project" : "Visite website"}
+                Visite website
               </a>
             </div>
           ) : null}
