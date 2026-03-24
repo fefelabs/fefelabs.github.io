@@ -1,8 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import ProjectsMasonry, { type Project } from "./projects-masonry";
 
 const liveProjects: Project[] = [
   {
     name: "Baby Match",
+    category: "app",
     punchline: "Swipe baby names together and find perfect matches.",
     description:
       "A collaborative naming experience with smart filters, huge international catalogs, and shared match lists.",
@@ -20,6 +24,7 @@ const liveProjects: Project[] = [
   },
   {
     name: "Words Puzzle Daily",
+    category: "game",
     punchline: "Daily word training with fast, addictive rounds.",
     description:
       "Build vocabulary and spelling reflexes through bite-sized puzzles designed for daily streaks.",
@@ -36,6 +41,7 @@ const liveProjects: Project[] = [
   },
   {
     name: "Magic Shades",
+    category: "game",
     punchline: "A meditative puzzle rhythm that gets brutally strategic.",
     description:
       "Merge colors, clear rows, and survive escalating pressure in a minimalist gameplay loop built for focus.",
@@ -51,6 +57,7 @@ const liveProjects: Project[] = [
   },
   {
     name: "Velib' Now",
+    category: "app",
     punchline: "Find available bikes and docks around Paris in seconds.",
     description:
       "A utility app focused on real-time station visibility for daily commutes and quick decision making.",
@@ -66,6 +73,7 @@ const liveProjects: Project[] = [
   },
   {
     name: "LED Scroller",
+    category: "app",
     punchline: "Turn text into bold scrolling LED signage.",
     description:
       "A playful browser utility for displaying animated LED-style messages, useful for quick signage and lightweight visual communication.",
@@ -78,6 +86,8 @@ const liveProjects: Project[] = [
 
 export default function HomePage() {
   const year = new Date().getFullYear();
+  const [filter, setFilter] = useState<"all" | "app" | "game">("all");
+  const filteredProjects = filter === "all" ? liveProjects : liveProjects.filter((project) => project.category === filter);
 
   return (
     <main className="grain pb-12">
@@ -93,20 +103,41 @@ export default function HomePage() {
       <section id="apps" className="mx-auto max-w-6xl px-4 pb-12 pt-8 sm:px-6 lg:px-8">
         <div className="reveal delay-2 mb-6 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h2 className="display-font text-3xl font-bold text-slate-900 sm:text-4xl">Apps</h2>
+            <h2 className="display-font text-3xl font-bold text-slate-900 sm:text-4xl">Projects</h2>
             <p className="mt-2 text-base text-muted">Released products, experiments, and utility apps from fefe LABS.</p>
           </div>
-          <a
-            className="btn btn-secondary"
-            href="https://play.google.com/store/apps/dev?id=5726795536168329368&hl=fr"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View developer profile
-          </a>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              className={filter === "all" ? "btn btn-primary" : "btn btn-secondary"}
+              onClick={() => {
+                setFilter("all");
+              }}
+            >
+              All
+            </button>
+            <button
+              type="button"
+              className={filter === "app" ? "btn btn-primary" : "btn btn-secondary"}
+              onClick={() => {
+                setFilter("app");
+              }}
+            >
+              Apps
+            </button>
+            <button
+              type="button"
+              className={filter === "game" ? "btn btn-primary" : "btn btn-secondary"}
+              onClick={() => {
+                setFilter("game");
+              }}
+            >
+              Games
+            </button>
+          </div>
         </div>
 
-        <ProjectsMasonry projects={liveProjects} />
+        <ProjectsMasonry projects={filteredProjects} animationKey={filter} />
       </section>
 
       <footer className="mx-auto mt-12 max-w-6xl px-4 pb-6 pt-2 sm:px-6 lg:px-8">

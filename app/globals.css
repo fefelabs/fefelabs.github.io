@@ -155,6 +155,16 @@ body {
 
 .masonry-card {
   height: max-content;
+  transition-property: opacity, transform;
+  transition-duration: 400ms;
+  transition-delay: calc(100ms * (sibling-index() + 1));
+}
+
+@starting-style {
+  .masonry-card {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
 
 @media (min-width: 768px) {

@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 
 export type Project = {
   name: string;
+  category: "app" | "game";
   punchline: string;
   description: string;
   cover?: string;
@@ -37,12 +38,12 @@ function StoreBadge({ href, store }: { href: string; store: "google" | "apple" }
   );
 }
 
-function ProjectCard({ project }: { project: Project }) {
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   const preserveCoverRatio = project.cover?.endsWith("/banner.png") ?? false;
 
   return (
     <article
-      className={`masonry-card group relative z-0 overflow-hidden rounded-3xl border bg-white/75 p-4 backdrop-blur-xl transition-transform duration-300 ease-out hover:z-10 hover:scale-[1.02] ${
+      className={`masonry-card group relative z-0 overflow-hidden rounded-3xl border bg-white/75 p-4 backdrop-blur-xl transition-[transform,opacity] duration-500 ease-out hover:z-10 hover:scale-[1.02] ${
         project.featured
           ? "masonry-card-featured border-emerald-200/80 shadow-[0_28px_90px_-40px_rgba(16,185,129,0.55)]"
           : "border-white/70 shadow-[0_24px_70px_-40px_rgba(15,23,42,0.6)]"
@@ -55,7 +56,7 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
       ) : null}
 
-      <div className="relative space-y-4">
+      <div className="relative space-y-4" style={{ transitionDelay: `${index * 90}ms` }}>
         <div className="overflow-hidden rounded-2xl border border-white/65 bg-white/70">
           {project.cover ? (
             <img
@@ -144,7 +145,13 @@ function ProjectCard({ project }: { project: Project }) {
   );
 }
 
-export default function ProjectsMasonry({ projects }: { projects: Project[] }) {
+export default function ProjectsMasonry({
+  projects,
+  animationKey,
+}: {
+  projects: Project[];
+  animationKey: string;
+}) {
   const gridRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -200,12 +207,12 @@ export default function ProjectsMasonry({ projects }: { projects: Project[] }) {
       });
       window.removeEventListener("resize", resizeItems);
     };
-  }, [projects]);
+  }, [projects, animationKey]);
 
   return (
     <div ref={gridRef} className="masonry-grid">
-      {projects.map((project) => (
-        <ProjectCard key={project.name} project={project} />
+      {projects.map((project, index) => (
+        <ProjectCard key={`${animationKey}-${project.name}`} project={project} index={index} />
       ))}
     </div>
   );
