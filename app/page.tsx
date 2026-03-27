@@ -142,7 +142,7 @@ export default function HomePage() {
       <footer className="mx-auto mt-12 max-w-6xl px-4 pb-6 pt-2 sm:px-6 lg:px-8">
         <div className="glass-panel reveal delay-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl px-4 py-3 text-sm text-slate-600 sm:px-6">
           <p>© {year} fefe LABS</p>
-          <a className="hover:text-slate-900" href="https://fefelabs.github.io/privacy-notice/">
+          <a className="hover:text-slate-900" href="/privacy-notice/">
             Privacy Policy
           </a>
         </div>
