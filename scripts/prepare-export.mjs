@@ -10,7 +10,6 @@ const staticEntries = [
   "wordspuzzle",
   "magic-shades",
   "velib_now",
-  "privacy-notice",
   ".well-known",
   ".nojekyll",
   "_config.yml",
