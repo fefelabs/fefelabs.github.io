@@ -62,6 +62,20 @@ body {
   backdrop-filter: blur(14px);
 }
 
+.page-logo-shell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-logo-mark {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1rem;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

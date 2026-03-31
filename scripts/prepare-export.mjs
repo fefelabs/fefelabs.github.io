@@ -8,8 +8,6 @@ const staticEntries = [
   "assets",
   "baby_match",
   "wordspuzzle",
-  "magic-shades",
-  "velib_now",
   ".well-known",
   ".nojekyll",
   "_config.yml",

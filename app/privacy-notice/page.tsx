@@ -6,7 +6,13 @@ export default function PrivacyNoticePage() {
         <div className="absolute right-[12%] top-6 h-56 w-56 rounded-full bg-sky-300/20 blur-3xl" />
       </div>
 
-      <section className="mx-auto max-w-4xl px-4 pb-12 pt-8 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-4xl justify-center px-4 pt-8 sm:px-6 lg:px-8">
+        <a className="page-logo-shell reveal" href="/" aria-label="fefe LABS home">
+          <img src="/brand/fefeLabs-icon.png" alt="fefe LABS" className="page-logo-mark" />
+        </a>
+      </div>
+
+      <section className="mx-auto max-w-4xl px-4 pb-12 pt-6 sm:px-6 lg:px-8">
         <div className="glass-panel reveal rounded-[2rem] p-6 shadow-[0_30px_80px_-50px_rgba(15,23,42,0.45)] sm:p-8">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Privacy Policy</p>
           <h1 className="display-font mt-4 text-4xl font-semibold leading-tight text-slate-950 sm:text-5xl">

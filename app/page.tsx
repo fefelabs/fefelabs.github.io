@@ -44,14 +44,14 @@ const liveProjects: Project[] = [
     punchline: "A meditative puzzle rhythm that gets brutally strategic.",
     description:
       "Merge colors, clear rows, and survive escalating pressure in a minimalist gameplay loop built for focus.",
-    cover: "/portfolio/magic-shades/Frame 810.png",
+    cover: "/portfolio/magic-shades/banner.png",
     screenshots: [
-      "/portfolio/magic-shades/Frame 809.png",
-      "/portfolio/magic-shades/Frame 803.png",
-      "/portfolio/magic-shades/Frame 811.png",
+      "/portfolio/magic-shades/screen_04.png",
+      "/portfolio/magic-shades/screen_03.png",
+      "/portfolio/magic-shades/screen_05.png",
     ],
     playStore: "https://play.google.com/store/apps/details?id=com.keke.shades_game&hl=fr",
-    landing: "",
+    landing: "/magic-shades/",
     accent: "from-sky-300/30 via-indigo-300/20 to-teal-300/20",
   },
   {
@@ -60,14 +60,14 @@ const liveProjects: Project[] = [
     punchline: "Find available bikes and docks around Paris in seconds.",
     description:
       "A utility app focused on real-time station visibility for daily commutes and quick decision making.",
-    cover: "/portfolio/velib-now/PlayStore_01.png",
+    cover: "/portfolio/velib-now/banner.png",
     screenshots: [
       "/portfolio/velib-now/PlayStore_02.png",
       "/portfolio/velib-now/PlayStore_03.png",
       "/portfolio/velib-now/PlayStore_04.png",
     ],
     playStore: "https://play.google.com/store/apps/details?id=com.keke.velib_now",
-    landing: "",
+    landing: "/velib_now/",
     accent: "from-zinc-300/30 via-slate-200/20 to-sky-200/20",
   },
   {
@@ -91,11 +91,10 @@ export default function HomePage() {
   return (
     <main className="grain pb-12">
       <div className="mx-auto max-w-6xl px-3 pt-8 sm:px-4 lg:px-5">
-        <header className="glass-panel reveal flex items-center justify-between gap-4 rounded-2xl px-3 py-3 sm:px-4">
-          <div className="inline-flex items-center gap-3">
-            <img src="/brand/fefeLabs-icon.png" alt="fefe LABS" className="h-10 w-10 rounded-xl" />
-            <p className="display-font text-sm font-semibold text-slate-900">fefe LABS</p>
-          </div>
+        <header className="reveal flex justify-center">
+          <a className="page-logo-shell" href="/" aria-label="fefe LABS home">
+            <img src="/brand/fefeLabs-icon.png" alt="fefe LABS" className="page-logo-mark" />
+          </a>
         </header>
       </div>
 
