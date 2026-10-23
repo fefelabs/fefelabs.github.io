@@ -18,7 +18,7 @@ export default function PrivacyNoticePage() {
           <h1 className="display-font mt-4 text-4xl font-semibold leading-tight text-slate-950 sm:text-5xl">
             Privacy Notice
           </h1>
-          <p className="mt-4 text-sm font-medium text-slate-500">Last updated July 18, 2022</p>
+          <p className="mt-4 text-sm font-medium text-slate-500">Last updated October 24, 2026</p>
 
           <div className="mt-8 space-y-6 text-base leading-7 text-slate-700">
             <p>
@@ -39,7 +39,7 @@ export default function PrivacyNoticePage() {
               <p>Download and use our mobile application — Magic Shades</p>
               <p>Download and use our mobile application — Baby Match</p>
               <p>Download and use our mobile application — Words Puzzle</p>
-               <p>Download and use our mobile application — Petite pousse</p>
+               <p>Download and use our mobile application — Petite Pousse</p>
             </div>
 
             <p>
@@ -63,6 +63,17 @@ export default function PrivacyNoticePage() {
               Please read this privacy notice carefully, as it will help you understand what we do with the
               information that we collect.
             </p>
+
+            <section className="space-y-3" id="petite-pousse">
+              <h2 className="display-font text-2xl font-semibold text-slate-900">Petite Pousse — pregnancy data and privacy</h2>
+              <p>Petite Pousse is published by fefe LABS. This section applies specifically to Petite Pousse and takes precedence over the general descriptions of other apps below.</p>
+              <p>The app uses your estimated due date, your choice of a 40- or 41-week term, widget preferences and pregnancy tracking status to calculate your current gestational week, countdown and weekly illustration. These settings are stored locally on your device and shared only with the app’s home screen widget through local device storage.</p>
+              <p>Petite Pousse does not transmit these settings to fefe LABS or third parties. It has no accounts, advertising, analytics, in-app purchases or tracking services. It does not access health records, contacts, location, camera or microphone.</p>
+              <p>Settings remain on your device until you delete them in the app or uninstall it. Use “Delete all my data” in pregnancy settings to remove saved pregnancy settings and reset the widget. The operating system may briefly retain a cached widget preview. Android backups are disabled. On iOS, device backups managed by you or your operating system may include local app data; manage those backups using your device or backup provider’s settings.</p>
+              <p>Local app storage is protected by the operating system’s app sandbox; the app does not add its own encryption layer. Protect your device and any backups against unauthorized access. fefe LABS has no remote copy of your pregnancy settings to retrieve or delete.</p>
+              <p>If you choose to open an NHS or other reference link, the external site receives a normal browser request and its own privacy policy applies. Petite Pousse does not include your pregnancy settings in these links. If you email support, we receive the information you choose to include so we can respond; please avoid sending sensitive pregnancy information.</p>
+              <p>For privacy questions or requests about information you have sent to support, contact <a className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4" href="mailto:fefelab.app@gmail.com">fefelab.app@gmail.com</a>. You can request deletion of support correspondence, subject to any applicable retention obligations.</p>
+            </section>
 
             <section className="space-y-3">
               <h2 className="display-font text-2xl font-semibold text-slate-900">1. What information do we collect?</h2>
