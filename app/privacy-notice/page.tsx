@@ -39,6 +39,7 @@ export default function PrivacyNoticePage() {
               <p>Download and use our mobile application — Magic Shades</p>
               <p>Download and use our mobile application — Baby Match</p>
               <p>Download and use our mobile application — Words Puzzle</p>
+               <p>Download and use our mobile application — Petite pousse</p>
             </div>
 
             <p>
