@@ -27,7 +27,7 @@ const liveProjects: Project[] = [
     category: "app",
     punchline: "Follow your pregnancy, one little companion at a time.",
     description:
-      "Discover a new fruit or vegetable companion each week, keep baby close with home screen widgets, and share little milestones with loved ones.",
+      "Discover a new adorable companion each week, keep baby close with home screen widgets, and share little milestones with loved ones.",
     cover: "/portfolio/petite-pousse/banner.png",
     screenshots: [
       "/portfolio/petite-pousse/01-week-by-week.png",
