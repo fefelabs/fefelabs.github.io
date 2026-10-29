@@ -23,6 +23,22 @@ const liveProjects: Project[] = [
     featured: true,
   },
   {
+    name: "Petite Pousse",
+    category: "app",
+    punchline: "Follow your pregnancy, one little companion at a time.",
+    description:
+      "Discover a new fruit or vegetable companion each week, keep baby close with home screen widgets, and share little milestones with loved ones.",
+    cover: "/portfolio/petite-pousse/banner.png",
+    screenshots: [
+      "/portfolio/petite-pousse/01-week-by-week.png",
+      "/portfolio/petite-pousse/02-android-widget.png",
+      "/portfolio/petite-pousse/03-weekly-companions.png",
+    ],
+    playStore: "https://play.google.com/store/apps/details?id=com.fefelabs.petitepousse",
+    landing: "/petite_pousse/",
+    accent: "from-lime-200/30 via-emerald-200/20 to-rose-200/20",
+  },
+  {
     name: "Words Puzzle Daily",
     category: "game",
     punchline: "Daily word training with fast, addictive rounds.",
