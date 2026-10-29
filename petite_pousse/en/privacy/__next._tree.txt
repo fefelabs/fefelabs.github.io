@@ -1,0 +1,7 @@
+:HL["/petite_pousse/_next/static/chunks/3ndww7_jkuuvm.css","style"]
+:HL["/petite_pousse/_next/static/media/manrope_latin_wght_normal-s.p.1p_a2k8qd5zhp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+4:[["children",{"s":"__PAGE__","h":160}]]
+3:[["children",{"s":"privacy","h":96,"c":"$Q4"}]]
+2:[["children",{"s":"en","h":96,"c":"$Q3"}]]
+1:[["children",{"s":"(en)","h":112,"c":"$Q2"}]]
+0:{"b":"YcTIiu7tIhI0tRm_-wVb1","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

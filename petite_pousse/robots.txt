@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://fefelabs.github.io/petite_pousse/sitemap.xml
