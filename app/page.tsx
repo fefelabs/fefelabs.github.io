@@ -35,6 +35,7 @@ const liveProjects: Project[] = [
       "/portfolio/petite-pousse/03-weekly-companions.png",
     ],
     playStore: "https://play.google.com/store/apps/details?id=com.fefelabs.petitepousse",
+    appStore: "https://apps.apple.com/us/app/petite-pousse/id6828638858",
     landing: "/petite_pousse/",
     accent: "from-lime-200/30 via-emerald-200/20 to-rose-200/20",
   },
